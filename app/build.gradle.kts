@@ -26,10 +26,14 @@ dependencies {
 
 application {
   // Define the main class for the application.
-  mainClass.set("oop.homework2.App")
+  // mainClass.set("oop.homework2.App")
 }
 
 tasks.named<Test>("test") {
   // Use JUnit Platform for unit tests.
   useJUnitPlatform()
+
+  this.testLogging {
+    this.showStandardStreams = true
+  }
 }
