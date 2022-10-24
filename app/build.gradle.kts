@@ -37,3 +37,7 @@ tasks.named<Test>("test") {
     this.showStandardStreams = true
   }
 }
+
+tasks.withType<JavaCompile> {
+  options.encoding = "UTF-8"
+}
